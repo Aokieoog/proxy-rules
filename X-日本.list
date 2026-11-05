@@ -1,34 +1,22 @@
-# X / Twitter rules for Shadowrocket RULE-SET
-# Bind this list to the Japan policy in the main config:
+
+# X / Twitter + Grok / xAI
+# Shadowrocket RULE-SET
+# Main config:
 # RULE-SET,<URL>,日本
 
-# X main domains
+# ==========================================
+# X / Twitter
+# ==========================================
+
+# Main domains
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,twimg.com
 
-# API, authentication and uploads
-DOMAIN-SUFFIX,api.x.com
-DOMAIN-SUFFIX,api.twitter.com
-DOMAIN-SUFFIX,oauth.twitter.com
-DOMAIN-SUFFIX,upload.twitter.com
-DOMAIN-SUFFIX,upload.x.com
-DOMAIN-SUFFIX,platform.twitter.com
-DOMAIN-SUFFIX,platform.x.com
-
-# Images, video and media
-DOMAIN-SUFFIX,pbs.twimg.com
-DOMAIN-SUFFIX,video.twimg.com
-DOMAIN-SUFFIX,abs.twimg.com
-DOMAIN-SUFFIX,ton.twimg.com
+# Related services
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,periscope.tv
-
-# Embeds, sharing and related services
-DOMAIN-SUFFIX,syndication.twitter.com
-DOMAIN-SUFFIX,publish.twitter.com
-DOMAIN-SUFFIX,analytics.twitter.com
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,tweetdeck.com
 DOMAIN-SUFFIX,twttr.com
@@ -36,7 +24,21 @@ DOMAIN-SUFFIX,twtrdns.net
 DOMAIN-SUFFIX,twitterinc.com
 DOMAIN-SUFFIX,twitteroauth.com
 
-# Publicly reported IPv4 ranges (partial list; not a complete CDN inventory)
+# ==========================================
+# Grok / xAI
+# ==========================================
+
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grokusercontent.com
+DOMAIN-SUFFIX,grokipedia.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,spacex.ai
+
+# ==========================================
+# X / Twitter IPv4
+# Partial public AS13414 prefixes
+# ==========================================
+
 IP-CIDR,64.63.0.0/18,no-resolve
 IP-CIDR,188.64.224.0/21,no-resolve
 IP-CIDR,192.133.76.0/22,no-resolve
@@ -53,7 +55,11 @@ IP-CIDR,104.244.45.0/24,no-resolve
 IP-CIDR,104.244.46.0/24,no-resolve
 IP-CIDR,104.244.47.0/24,no-resolve
 
-# Publicly reported IPv6 ranges (partial list)
+# ==========================================
+# X / Twitter IPv6
+# Partial public AS13414 prefixes
+# ==========================================
+
 IP-CIDR6,2400:6680:f000::/36,no-resolve
 IP-CIDR6,2606:1f80:f000::/36,no-resolve
 IP-CIDR6,2a04:9d40:f000::/36,no-resolve
