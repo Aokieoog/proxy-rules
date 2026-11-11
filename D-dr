@@ -1,0 +1,10 @@
+
+# Shadowrocket RULE-SET
+# Main config:
+# RULE-SET,<URL>,直连
+
+# ==========================================
+# 自定义
+# ==========================================
+DOMAIN-SUFFIX,bing.com
+IP-CIDR,150.230.105.175/32
